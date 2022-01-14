@@ -1,0 +1,30 @@
+/* ======= ABOUT MOBILE ======= */
+@media only screen and (max-width: 600px) {
+    #about-wrap{
+        flex-direction: column;
+        gap: 4vh;
+    }
+
+    #about-detail-wrap{
+        gap: 2vw;
+        width: 100%;
+    }
+
+    #about-title{
+        font-size: calc(2.5vw + 2.5vh);
+    }
+
+    .about-txt{
+        font-size: calc(1.5vw + 1.5vh);
+    }
+
+    #about-img-link{
+        width: 100%;
+        height: 75vw;
+    }
+
+    #about-click-me{
+        height: 10vw;
+        top: 15vw;
+    }
+}

@@ -1,0 +1,65 @@
+/* ======= PROJECTS ======= */
+
+#project-list
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.project-item{
+    width: calc(100% - 2vw);
+    background-color: #39393A;
+    border-radius: 8px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    color: white;
+    padding: 1vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-detail-wrap{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    padding-right: 1vw;
+}
+
+.project-img{
+    width: 20%;
+    object-fit:contain;
+    border-radius: 8px;
+}
+
+.project-item-title{
+    font-size: calc(1.75vw + 1.75vh);
+    margin-bottom: 10px;
+}
+
+.project-item-description{
+    font-size: calc(0.8vw + 0.8vh);
+    margin-bottom: 2vh;
+}
+
+.project-links{
+    margin-top: auto;
+    display: flex;
+    gap: 1vw;
+}
+
+.box-btn{
+    display: inline-block;
+    font-size: calc(0.8vw + 0.8vh);
+    font-weight: 400;
+    padding: 0.5vw 1vw;
+    color: #FB9101;
+    background-color: #505050;
+    transition: 0.5s;
+    border-radius: 8px;
+}
+
+.box-btn:hover{
+    cursor: pointer;
+    background-color: #FB9101;
+    color: #505050;
+}
