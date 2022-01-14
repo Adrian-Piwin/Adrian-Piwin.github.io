@@ -15,7 +15,7 @@ window.addEventListener('load', function () {
         if (txt[elemIndex].charAt(index) != " ")
             keyboardImg.src = "../assets/keys/" + keyboardSources[getRandomInt(keyboardSources.length)] + ".png";
         else
-            keyboardImg.src = "../assets/keys/space.png";
+            keyboardImg.src = "../assets/keys/Space.png";
 
         if (index < txt[elemIndex].length){
             // Type next letter after delay
