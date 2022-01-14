@@ -41,5 +41,5 @@ window.addEventListener('load', function () {
     }
     
     // Type out home page text
-    typeOut([homeText[1], homeText[3]], ["Hey, I'm Adrian, a", "Fullstack Developer"], "", 0, 0);
+    typeOut([homeText[1], homeText[3]], ["Hey! I'm Adrian, a", "Fullstack Developer"], "", 0, 0);
 })

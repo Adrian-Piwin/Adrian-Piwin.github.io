@@ -54,3 +54,11 @@ body{
 .remove-link{
     text-decoration: none;
 }
+
+.link-effect{
+    transition: 0.2s;
+}
+
+.link-effect:hover{
+    transform: scale(1.2, 1.2);
+}
