@@ -35,12 +35,3 @@
     image-rendering: pixelated;
     object-fit: contain;
 }
-
-#about-click-me{
-    position: absolute;
-    top: 10vh;
-    right: 0;
-    height: 5vw;
-    object-fit: contain;
-    transform: rotateZ(25deg);
-}
