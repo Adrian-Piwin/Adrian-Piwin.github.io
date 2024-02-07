@@ -1,3 +1,5 @@
+@import 'variables';
+
 /* ======= HOME ======= */
 
 #home{
@@ -16,7 +18,7 @@
 
 #home-img{
     width: 100%;
-    height: calc(100%-60px);
+    height: calc(100% - 60px);
     object-fit: scale-down;
     z-index: 5;
 }
@@ -44,7 +46,7 @@
     font-family: 'Source Code Pro', monospace;
     font-size: 4.35vw;
     font-weight: 700;
-    color: #3C91E6;
+    color: $theme-color;
 }
 
 #home-links{

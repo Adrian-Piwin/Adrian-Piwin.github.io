@@ -21,7 +21,7 @@ window.addEventListener('load', function () {
             // Type next letter after delay
             setTimeout(function() {
                 typeOut(elem, txt, text, index, elemIndex)
-            }, 100);
+            }, 80);
         }else{
             // Add new text
             elemIndex++;

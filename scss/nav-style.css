@@ -1,0 +1,162 @@
+/* ======= NAVBAR ======= */
+#logo {
+  position: fixed;
+  left: 30px;
+  top: 30px;
+  color: white;
+  text-decoration: none;
+  font-size: 60px;
+  height: 50px;
+  z-index: 10;
+}
+
+#logo img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* ======= SIDE NAVBAR ======= */
+#menu-toggle {
+  position: fixed;
+  top: 55px;
+  right: 30px;
+  z-index: 10;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+       user-select: none;
+}
+
+#menu-toggle a {
+  text-decoration: none;
+  font-family: "Source Code Pro", monospace;
+  font-size: 3vw;
+  font-weight: 700;
+  color: #393968;
+  transition: 0.1s;
+}
+
+#menu-toggle a:hover {
+  color: #FB9101;
+}
+
+#menu-toggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menu-toggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: white;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+#menu-toggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menu-toggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menu-toggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+#menu-toggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menu-toggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Menu
+ */
+#menu {
+  position: fixed;
+  left: 100%;
+  width: 250px;
+  height: 100%;
+  margin: -100px 0 0 0;
+  padding-top: 150px;
+  background-color: #ebeeed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#menu li {
+  width: 200px;
+  padding: 5px 5px;
+  margin: 15px 0;
+  border-radius: 8px;
+  font-size: 20px;
+  background-color: #dadada;
+  transition: 0.1s;
+}
+
+#menu li:hover {
+  background-color: #ebeeed;
+  box-shadow: 0px 5px 8px #888888;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menu-toggle input:checked ~ ul {
+  transform: translate(-290px, 0);
+}
+
+/* ======= Links ======= */
+#nav-links {
+  position: absolute;
+  bottom: 175px;
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+
+#nav-links a img {
+  width: 40px;
+}
+
+/* ======= Copyright ======= */
+#copyright {
+  position: absolute;
+  text-align: center;
+  width: 200px;
+  bottom: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: black;
+  font-size: 12px;
+  opacity: 0.75;
+}/*# sourceMappingURL=nav-style.css.map */

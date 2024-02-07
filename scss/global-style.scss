@@ -1,3 +1,5 @@
+@import 'variables';
+
 /* ======= Scrollbar ======= */
 
 /* width */
@@ -19,6 +21,20 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #afafaf; 
+}
+
+/* ======= BG Colors ======= */
+
+#about{
+    background: linear-gradient(to right bottom, $primary-color 50%, $secondary-color 50%);
+}
+
+#projects{
+    background-color: $primary-color;
+}
+
+#home{
+    background: linear-gradient(to right bottom, $secondary-color 50%, $primary-color 50%);
 }
 
 /* ======= Global ======= */
@@ -46,7 +62,7 @@ body{
 .page-title{
     transform: translate(-50px);
     font-size: calc(1.75vw + 1.75vh);
-    color: #3C91E6;
+    color: $theme-color;
     font-family: 'Source Code Pro', monospace;
     padding: 50px 0;
 }

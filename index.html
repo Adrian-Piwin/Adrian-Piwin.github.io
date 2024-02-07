@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../style-sheets/global-style.css">
-    <link rel="stylesheet" href="../style-sheets/global-mobile-style.css">
-    <link rel="stylesheet" href="../style-sheets/nav-style.css">
-    <link rel="stylesheet" href="../style-sheets/homepage-style.css">
-    <link rel="stylesheet" href="../style-sheets/homepage-mobile-style.css">
-    <link rel="stylesheet" href="../style-sheets/project-style.css">
-    <link rel="stylesheet" href="../style-sheets/project-mobile-style.css">
-    <link rel="stylesheet" href="../style-sheets/about-style.css">
-    <link rel="stylesheet" href="../style-sheets/about-mobile-style.css">
+    <link rel="stylesheet" href="../scss/global-style.css">
+    <link rel="stylesheet" href="../scss/global-mobile-style.css">
+    <link rel="stylesheet" href="../scss/nav-style.css">
+    <link rel="stylesheet" href="../scss/homepage-style.css">
+    <link rel="stylesheet" href="../scss/homepage-mobile-style.css">
+    <link rel="stylesheet" href="../scss/project-style.css">
+    <link rel="stylesheet" href="../scss/project-mobile-style.css">
+    <link rel="stylesheet" href="../scss/about-style.css">
+    <link rel="stylesheet" href="../scss/about-mobile-style.css">
 
     <script src="../scripts/homepage-script.js"></script>
     <script src="../scripts/script.js"></script>
@@ -28,11 +28,6 @@
     <!-- Mobile bar -->
     <div id="mobile-nav-bg" style="display: none;"></div>
 
-    <!-- Logo -->
-    <a id="logo" href="#home">
-        <img src="../assets/logo.png" alt="">
-    </a>
-
     <!-- Popout Nav -->
     <div id="menu-toggle">
 
@@ -46,7 +41,7 @@
             <a href="#home"><li>HOME</li></a>
             <a href="#projects"><li>PROJECTS</li></a>
             <a href="#about"><li>ABOUT</li></a>
-            <a href="https://pdfhost.io/v/9XT6UKXRV_resume" target="_blank"><li>RESUME</li></a>
+            <a href="https://lavender-andy-36.tiiny.site/" target="_blank"><li>RESUME</li></a>
 
             <div id="nav-links">
                 <a href="https://github.com/Adrian-Piwin" target="_blank"><img class="link-effect" src="../assets/GitHub.png" alt=""></a>
@@ -54,16 +49,16 @@
                 <a href="mailto:adrianpiwin@gmail.com" target="_blank"><img class="link-effect" src="../assets/Email.png" alt=""></a>
             </div>
 
-            <div id="copyright">© Copyright 2021, Adrian Piwin</div>
+            <div id="copyright">© Copyright 2024, Adrian Piwin</div>
         </ul>
     </div>
 
     <!-- Home Page -->
-    <div id="home" class="page" style="background: linear-gradient(to right bottom, #39393A 50%, #342E37 50%);">
+    <div id="home" class="page">
         <div id="homeWrapper">
             <img id="home-img" src="../assets/laptop.png">
-            <img id="home-bg" src="../assets/bg4.gif" alt="">
-            <img id="home-bg" src="../assets/black.png" style="opacity: 0.7;" alt="">
+            <img id="home-bg" src="../assets/bg9.gif" alt="">
+            <img id="home-bg" src="../assets/black.png" style="opacity: 0.6;" alt="">
             <div id="home-text">
                 <div style="padding-left: 0.2vw;">ㅤ</div>
                 <div>ㅤ</div>
@@ -77,7 +72,7 @@
     </div>
 
     <!-- Project Page -->
-    <div id="projects" class="page" style="background-color: #342E37;">
+    <div id="projects" class="page">
 
         <div class="page-title">&ltprojects&gt</div>
 
@@ -86,8 +81,23 @@
             <div class="project-item">
                 <div class="project-detail-wrap">
                     <!-- Project Title & Description -->
+                    <div class="project-item-title">Kayletter</div>
+                    <div class="project-item-description">A website developed with ReactJS, HTML, CSS, and Firebase. Deployed onto an ubuntu server. A web application with a mobile focus. Users can create their own customized page with daily notes to send to their significant other. </div>
+                    <!-- Project Links -->
+                    <span class="project-links">
+                        <a href="https://kayletter.devaydren.com/" target="_blank" class="box-btn remove-link">View Project</a>
+                        <a href="https://github.com/Adrian-Piwin/Kayletter-App" target="_blank" class="box-btn remove-link">View Code</a>
+                    </span>
+                </div>
+                
+                <img class="project-img" src="assets/kayletter.png" alt="">
+            </div>
+
+            <div class="project-item">
+                <div class="project-detail-wrap">
+                    <!-- Project Title & Description -->
                     <div class="project-item-title">Overboard</div>
-                    <div class="project-item-description">I created the game Overboard in collaboration with a 3D modelling artist. The game was developed using Unity for a game jam competition, where it was completed within 1 week. With the given theme "less is more", we came up with a game where the objective is to slow the sinking of your ship by throwing your cargo overboard, whilst a pesky squid returns it.</div>
+                    <div class="project-item-description">A 3D endless runner created with Unity and C# in collaboration with a 3D artist. Created for a game jam competition, where it was completed within 1 week.</div>
                     <!-- Project Links -->
                     <span class="project-links">
                         <a href="https://devaydren.itch.io/overboard" target="_blank" class="box-btn remove-link">View Project</a>
@@ -102,7 +112,7 @@
                 <div class="project-detail-wrap">
                     <!-- Project Title & Description -->
                     <div class="project-item-title">Abyssal</div>
-                    <div class="project-item-description">The game Abyssal was created with unity in collaboration with a 2D artist. The game was developed in 1 week for a game jam competition, where it recieved 2nd place. With the theme "Attraction and Repulsion", I created an endless survival game where the main weapon had boomerang characteristics. I went for a simple concept, polishing the game with finer detail.</div>
+                    <div class="project-item-description">A 2D endless wave survival game created with Unity and C# in collaboration with a 2D artist. The game was developed in 1 week for a game jam competition, where it recieved 2nd place. </div>
                     <!-- Project Links -->
                     <span class="project-links">
                         <a href="https://devaydren.itch.io/abyssal" target="_blank" class="box-btn remove-link">View Project</a>
@@ -117,7 +127,7 @@
                 <div class="project-detail-wrap">
                     <!-- Project Title & Description -->
                     <div class="project-item-title">Shape Shifted</div>
-                    <div class="project-item-description">I created the game Shape Shifted entirely myself, using Unity. The game was developed in 3 days for a game jam competition, where it recieved 5th place. With the theme "teleportation", I created an endless runner where the player teleports around to avoid danger. The game also includes a coin/shop system for character customization.</div>
+                    <div class="project-item-description">A 2D endless runner created with Unity and C#. The game was developed in 3 days for a game jam competition, where it recieved 5th place. The game also includes a coin/shop system for character customization.</div>
                     <!-- Project Links -->
                     <span class="project-links">
                         <a href="https://devaydren.itch.io/shape-shifted" target="_blank" class="box-btn remove-link">View Project</a>
@@ -126,6 +136,21 @@
                 </div>
                 
                 <img class="project-img" src="assets/shapeshifted.png" alt="">
+            </div>
+
+            <div class="project-item">
+                <div class="project-detail-wrap">
+                    <!-- Project Title & Description -->
+                    <div class="project-item-title">Minesweeper Clone</div>
+                    <div class="project-item-description">Created a clone of Minesweeper using C#, XAML, and UWP in collaboration with another developer for a final term project. </div>
+                    <!-- Project Links -->
+                    <span class="project-links">
+                        <a href="https://github.com/Adrian-Piwin/Minesweeper-Clone/" target="_blank" class="box-btn remove-link">View Project</a>
+                        <a href="https://github.com/Adrian-Piwin/Minesweeper-Clone/" target="_blank" class="box-btn remove-link">View Code</a>
+                    </span>
+                </div>
+                
+                <img class="project-img" src="assets/MineSweeper.png" alt="">
             </div>
 
             <div class="project-item">
@@ -149,23 +174,23 @@
     </div>
 
     <!-- About Page -->
-    <div id="about" class="page" style="background: linear-gradient(to right bottom, #342E37 50%, #39393A 50%);">
+    <div id="about" class="page">
         <div class="page-title">&ltabout&gt</div>
 
         <div id="about-wrap">
             <div id="about-detail-wrap">
-                <div id="about-title">Adrian Piwin</div>
-                <div class="about-txt">Ever since I took my first computer science class in highschool, I fell in love with programming and continued my passion by taking a Bachelor's of Computer Science program at Sheridan College. </div>
-                <div class="about-txt">I enjoy finding solutions to problems and developing video games. In my free time I like to challenge myself by participating in a game jam where I can create something from scratch. I like to challenge myself to work efficiently, under pressure with time and theme restrictions.</div>
-                <div class="about-txt">While I enjoy creating video games, one of my major hobbies is playing them!</div>
-
+                <div id="about-title">About Me</div>
+                <div class="about-txt">I've been fascinated by technology since childhood, and when I stumbled upon programming, it felt like discovering my true calling. That initial spark has only grown brighter over the years, culminating in my degree in computer science. </div>
+                <div class="about-txt">Puzzles and problem-solving? They're my jam. I thrive on diving headfirst into the unknown, fueled by an insatiable curiosity and an eagerness to learn.</div>
+                <div class="about-txt">Gaming is another one of my passions. When I'm not playing them, I like to take on game jams, where I get to flex my creative muscles and bring ideas to life within tight timeframes.</div>
+                <br/>
                 <div id="about-title">Let's Talk!</div>
-                <div class="about-txt">I'd love to hear from you, contact me at <span style="color: #FB9101;">adrianpiwin@gmail.com</span></div>
+                <div class="about-txt">I'd like to hear from you, contact me at <span style="color: #FB9101;">adrianpiwin@gmail.com</span></div>
             </div>
     
-            <a href="https://pdfhost.io/v/9XT6UKXRV_resume" target="_blank" id="about-img-link">
+            <div id="about-img-container">
                 <img id="about-img" src="../assets/me2.png" alt="">
-            </a>
+            </div>
 
         </div>
 

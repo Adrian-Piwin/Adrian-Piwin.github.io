@@ -1,0 +1,63 @@
+/* ======= PROJECTS ======= */
+#project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+
+.project-item {
+  width: calc(100% - 2vw);
+  background-color: #364156;
+  border-radius: 15px;
+  color: white;
+  padding: 1vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-detail-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  padding-right: 1vw;
+}
+
+.project-img {
+  width: 20%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 8px;
+}
+
+.project-item-title {
+  font-size: calc(1.75vw + 1.75vh);
+  margin-bottom: 10px;
+}
+
+.project-item-description {
+  font-size: calc(0.8vw + 0.8vh);
+  margin-bottom: 2vh;
+}
+
+.project-links {
+  margin-top: auto;
+  display: flex;
+  gap: 1vw;
+}
+
+.box-btn {
+  display: inline-block;
+  font-size: calc(0.8vw + 0.8vh);
+  font-weight: 700;
+  padding: 0.5vw 1vw;
+  color: #FB9101;
+  background-color: #212D40;
+  transition: 0.1s;
+  border-radius: 8px;
+}
+
+.box-btn:hover {
+  cursor: pointer;
+  background-color: #FB9101;
+  color: #212D40;
+}/*# sourceMappingURL=project-style.css.map */
