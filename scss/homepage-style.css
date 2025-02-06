@@ -19,7 +19,7 @@
   width: 100%;
   height: calc(100% - 60px);
   -o-object-fit: scale-down;
-     object-fit: scale-down;
+  object-fit: scale-down;
   z-index: 5;
 }
 
@@ -29,7 +29,7 @@
   width: 55vw;
   height: 35vw;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 #home-text {
@@ -85,4 +85,6 @@
     gap: 15px;
     width: 48px;
   }
-}/*# sourceMappingURL=homepage-style.css.map */
+}
+
+/*# sourceMappingURL=homepage-style.css.map */

@@ -1,24 +1,33 @@
 /* ======= Global Mobile ======= */
 
 @media only screen and (max-width: 600px) {
-    #mobile-nav-bg{
-        display: block !important;
-        width: 100%;
-        height: 120px;
-        background-color: black;
-        opacity: 0.9;
-        position: fixed;
-        top: 0;
-        z-index: 10;
+    #mobile-nav-bg {
+      display: block !important;
+      width: 100%;
+      height: 120px;
+      background-color: black;
+      opacity: 0.9;
+      position: fixed;
+      top: 0;
+      z-index: 10;
     }
-
+    .page {
+      width: 80%;
+      padding: 0 10%;
+    }
+    .page-title {
+      font-size: calc(2.5vw + 2.5vh);
+      transform: translate(0);
+    }
+  }
+  
+  @media only screen and (max-width: 1200px) {
     .page{
         width: 80%;
         padding: 0 10%;
     }
-
-    .page-title{
-        font-size: calc(2.5vw + 2.5vh);
-        transform: translate(0);
+  
+    .page-title {
+      transform: translate(0);
     }
-}
+  }

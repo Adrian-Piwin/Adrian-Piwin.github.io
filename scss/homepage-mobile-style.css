@@ -4,7 +4,6 @@
     width: 80%;
     padding: 0 10%;
   }
-
   #homeWrapper {
     display: flex;
     position: relative;
@@ -38,4 +37,6 @@
   #home-links a img {
     width: 100%;
   }
-}/*# sourceMappingURL=homepage-mobile-style.css.map */
+}
+
+/*# sourceMappingURL=homepage-mobile-style.css.map */

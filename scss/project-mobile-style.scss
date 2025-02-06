@@ -1,41 +1,44 @@
 /* ======= PROJECTS MOBILE ======= */
-
 @media only screen and (max-width: 600px) {
-
-    #project-list
-    {
-        gap: 6vw;
+    #project-list {
+      gap: 6vw;
     }
-
-    .project-item{
-        width: 100%;
-        flex-direction: column-reverse;
+    .project-item {
+      width: 100%;
+      flex-direction: column-reverse;
     }
-    
-    .project-detail-wrap{
-        width: 90%;
-        padding: 5% 5%;
+    .project-detail-wrap {
+      width: 90%;
+      padding: 5% 5%;
     }
-    
-    .project-img{
-        width: 50%;
-        padding: 10% 25% 5% 25%;
+    .project-img {
+      width: 50%;
+      padding: 10% 25% 5% 25%;
     }
-    
-    .project-item-title{
-        font-size: calc(2.5vw + 2.5vh);
+    .project-img-multi {
+      display: flex;
+      flex-direction: row;
+      padding: 0 5%;
+      justify-content: center;
+      gap: 5%;
+      width: 90%;
+      margin-top: 5%;
     }
-    
-    .project-item-description{
-        font-size: calc(1.5vw + 1.5vh);
+    .project-img-multi img {
+      padding: 0 !important;
+      width: 40% !important;
     }
-    
-    .project-links{
-        gap: 2vw;
+    .project-item-title {
+      font-size: calc(2.5vw + 2.5vh);
     }
-    
-    .box-btn{
-        font-size: calc(1.5vw + 1.5vh);
-        padding: 1.5vw 2.5vw;
+    .project-item-description {
+      font-size: calc(1.5vw + 1.5vh);
+    }
+    .project-links {
+      gap: 2vw;
+    }
+    .box-btn {
+      font-size: calc(1.5vw + 1.5vh);
+      padding: 1.5vw 2.5vw;
     }
 }

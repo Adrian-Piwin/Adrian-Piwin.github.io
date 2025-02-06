@@ -18,14 +18,12 @@
     font-size: calc(2.5vw + 2.5vh);
     transform: translate(0);
   }
-}/*# sourceMappingURL=global-mobile-style.css.map */
-
+}
 @media only screen and (max-width: 1200px) {
-  .page{
-      width: 80%;
-      padding: 0 10%;
+  .page {
+    width: 80%;
+    padding: 0 10%;
   }
-
   .page-title {
     transform: translate(0);
   }

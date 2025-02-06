@@ -25,18 +25,18 @@
 .project-img {
   width: 20%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   border-radius: 8px;
 }
 
-.project-img-multi{
+.project-img-multi {
   width: 35%;
   display: flex;
   flex-direction: row;
   gap: 5%;
 }
 
-.project-img-multi img{
+.project-img-multi img {
   width: 47.5% !important;
 }
 
@@ -71,4 +71,6 @@
   cursor: pointer;
   background-color: #FB9101;
   color: #212D40;
-}/*# sourceMappingURL=project-style.css.map */
+}
+
+/*# sourceMappingURL=project-style.css.map */

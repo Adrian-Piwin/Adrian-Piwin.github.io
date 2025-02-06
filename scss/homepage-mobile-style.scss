@@ -1,42 +1,41 @@
 /* ======= HOME ======= */
 @media only screen and (max-width: 600px) {
-    #homeWrapper{
-        display: flex;
-        position: relative;
-        align-items: center;
-        justify-content: center;
-        margin: 30px 0;
+    #home {
+      width: 80%;
+      padding: 0 10%;
     }
-    
-    #home-bg{
-        position: absolute;
-        transform: translate(0vw, -9vw);
-        width: 64vw;
-        height: 38vw;
+  
+    #homeWrapper {
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      margin: 30px 0;
     }
-    
-    #home-text{
-        position: absolute;
-        transform: translateY(-7vw);
-        width: 60vw;
+    #home-bg {
+      position: absolute;
+      transform: translate(0vw, -9vw);
+      width: 64vw;
+      height: 38vw;
     }
-    
-    #home-text :nth-child(1){
-        font-size: 3.5vw;
+    #home-text {
+      position: absolute;
+      transform: translateY(-7vw);
+      width: 60vw;
     }
-    
-    #home-text :nth-child(2){
-        font-size: 5vw;
+    #home-text :nth-child(1) {
+      font-size: 3.5vw;
     }
-
-    #home-links{
-        transform: translate(0,36vw);
-        flex-direction: row;
-        gap: 2.5vw;
-        width: 30vw;
+    #home-text :nth-child(2) {
+      font-size: 5vw;
     }
-
-    #home-links a img{
-        width: 100%;
+    #home-links {
+      transform: translate(0, 36vw);
+      flex-direction: row;
+      gap: 2.5vw;
+      width: 30vw;
+    }
+    #home-links a img {
+      width: 100%;
     }
 }
