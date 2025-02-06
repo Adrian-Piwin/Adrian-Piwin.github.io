@@ -47,15 +47,15 @@ body {
 }
 
 .page {
-  width: 70%;
-  padding: 0 15%;
+  width: 50%;
+  padding: 0 25%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
 .page-title {
-  transform: translate(-50px);
+  transform: translate(-150px);
   font-size: calc(1.75vw + 1.75vh);
   color: #FB9101;
   font-family: "Source Code Pro", monospace;

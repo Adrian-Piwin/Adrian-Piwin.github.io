@@ -29,6 +29,17 @@
   border-radius: 8px;
 }
 
+.project-img-multi{
+  width: 35%;
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+}
+
+.project-img-multi img{
+  width: 47.5% !important;
+}
+
 .project-item-title {
   font-size: calc(1.75vw + 1.75vh);
   margin-bottom: 10px;
