@@ -73,26 +73,28 @@
     setTimeout(tick, 2600);
   }
 
-  /* ---------- Count up ---------- */
-  const countObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) return;
-      const el = entry.target;
-      countObserver.unobserve(el);
-      if (reduceMotion) return;
-      const target = +el.dataset.count;
-      const start = performance.now();
-      const duration = 1200;
-      const step = (now) => {
-        const t = Math.min(1, (now - start) / duration);
-        el.textContent = Math.round(target * (1 - Math.pow(1 - t, 3)));
-        if (t < 1) requestAnimationFrame(step);
-      };
-      el.textContent = "0";
-      requestAnimationFrame(step);
-    });
-  }, { threshold: 0.6 });
-  document.querySelectorAll("[data-count]").forEach((el) => countObserver.observe(el));
+  /* ---------- Pixel sprites: step through frames while on screen ---------- */
+  document.querySelectorAll(".sprite[data-sheet]").forEach((el) => {
+    const frames = +el.dataset.frames || 1;
+    const seq = (el.dataset.seq || "0").split(",").map(Number);
+    const ms = +el.dataset.ms || 250;
+    el.style.backgroundImage = `url("${el.dataset.sheet}")`;
+    el.style.setProperty("--frames", frames);
+    const show = (f) => { el.style.backgroundPosition = `${frames > 1 ? (f / (frames - 1)) * 100 : 0}% 0`; };
+    show(seq[0]);
+    if (reduceMotion || seq.length < 2) return;
+
+    let i = 0;
+    let timer = null;
+    new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting && !timer) {
+        timer = setInterval(() => show(seq[(i = (i + 1) % seq.length)]), ms);
+      } else if (!entry.isIntersecting && timer) {
+        clearInterval(timer);
+        timer = null;
+      }
+    }).observe(el);
+  });
 
   /* ---------- Nav: scrolled / hide on scroll down / active link ---------- */
   const nav = document.getElementById("nav");
