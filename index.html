@@ -1,217 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../scss/global-style.css">
-    <link rel="stylesheet" href="../scss/global-mobile-style.css">
-    <link rel="stylesheet" href="../scss/nav-style.css">
-    <link rel="stylesheet" href="../scss/homepage-style.css">
-    <link rel="stylesheet" href="../scss/homepage-mobile-style.css">
-    <link rel="stylesheet" href="../scss/project-style.css">
-    <link rel="stylesheet" href="../scss/project-mobile-style.css">
-    <link rel="stylesheet" href="../scss/about-style.css">
-    <link rel="stylesheet" href="../scss/about-mobile-style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adrian Piwin · Software Engineer</title>
+  <meta name="description" content="Adrian Piwin is a software engineer with 4+ years of experience building mobile apps, web platforms and games. Creator of Nutoro, HealthCore and SetupSignal.">
+  <meta name="theme-color" content="#0a0f18">
 
-    <script src="../scripts/homepage-script.js"></script>
-    <script src="../scripts/script.js"></script>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Adrian Piwin · Software Engineer">
+  <meta property="og:description" content="Mobile apps, web platforms and games. Creator of Nutoro, HealthCore and SetupSignal.">
+  <meta property="og:url" content="https://adrian-piwin.github.io/">
+  <meta property="og:image" content="https://adrian-piwin.github.io/assets/img/og.png">
+  <meta name="twitter:card" content="summary_large_image">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
-    
-    <title>Adrian Piwin</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
 </head>
 <body>
-    <!-- Mobile bar -->
-    <div id="mobile-nav-bg" style="display: none;"></div>
+  <div class="progress" aria-hidden="true"></div>
+  <div class="bg" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <div class="bg-glow bg-glow--a"></div>
+    <div class="bg-glow bg-glow--b"></div>
+  </div>
 
-    <!-- Popout Nav -->
-    <div id="menu-toggle">
+  <!-- Nav -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#top" class="logo" aria-label="Adrian Piwin, home">
+        <span class="logo-mark">AP</span>
+        <span class="logo-text">Adrian Piwin</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#work" data-nav="work">Work</a>
+        <a href="#about" data-nav="about">About</a>
+        <a href="#contact" data-nav="contact">Contact</a>
+        <a href="https://lavender-andy-36.tiiny.site/" target="_blank" rel="noopener" class="btn btn--sm btn--ghost">Resume</a>
+      </nav>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="https://lavender-andy-36.tiiny.site/" target="_blank" rel="noopener">Resume ↗</a>
+    </div>
+  </header>
 
-        <input type="checkbox" />
-        
-        <span></span>
-        <span></span>
-        <span></span>
-        
-        <ul id="menu">
-            <a href="#home"><li>HOME</li></a>
-            <a href="#projects"><li>PROJECTS</li></a>
-            <a href="#about"><li>ABOUT</li></a>
-            <a href="https://lavender-andy-36.tiiny.site/" target="_blank"><li>RESUME</li></a>
-
-            <div id="nav-links">
-                <a href="https://github.com/Adrian-Piwin" target="_blank"><img class="link-effect" src="../assets/GitHub.png" alt=""></a>
-                <a href="https://www.linkedin.com/in/adrian-piwin/" target="_blank"><img class="link-effect" src="../assets/LinkedIn.png" alt=""></a>
-                <a href="mailto:adrianpiwin@gmail.com" target="_blank"><img class="link-effect" src="../assets/Email.png" alt=""></a>
-            </div>
-
-            <div id="copyright">© Copyright 2024, Adrian Piwin</div>
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow reveal"><span class="dot"></span>Software engineer · 4+ years</p>
+        <h1 class="hero-title">
+          <span class="line"><span class="word">Hey, I'm Adrian.</span></span>
+          <span class="line line--sub"><span class="word">I build <span class="typed" data-words="mobile apps|web platforms|AI tools|games">mobile apps</span><span class="caret" aria-hidden="true"></span></span></span>
+        </h1>
+        <p class="hero-lede reveal">I design, build and ship products end to end, from the first sketch to the App Store. Right now that means a calorie tracker, an Apple Health dashboard and an AI paper-trading platform.</p>
+        <div class="hero-cta reveal">
+          <a href="#work" class="btn btn--primary">View my work <span aria-hidden="true">→</span></a>
+          <a href="#contact" class="btn btn--ghost">Get in touch</a>
+        </div>
+        <ul class="hero-social reveal" aria-label="Social links">
+          <li><a href="https://github.com/Adrian-Piwin" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.4c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.3-1.7-1.3-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.4-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg></a></li>
+          <li><a href="https://www.linkedin.com/in/adrian-piwin/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg></a></li>
+          <li><a href="mailto:adrianpiwin@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm1 2.3V17h16V7.3l-8 5.6-8-5.6ZM18.6 7H5.4L12 11.6 18.6 7Z"/></svg></a></li>
         </ul>
-    </div>
+      </div>
 
-    <!-- Home Page -->
-    <div id="home" class="page">
-        <div id="homeWrapper">
-            <img id="home-img" src="../assets/laptop.png">
-            <img id="home-bg" src="../assets/bg9.gif" alt="">
-            <img id="home-bg" src="../assets/black.png" style="opacity: 0.6;" alt="">
-            <div id="home-text">
-                <div style="padding-left: 0.2vw;">ㅤ</div>
-                <div>ㅤ</div>
-            </div>
-            <div id="home-links">
-                <a href="https://github.com/Adrian-Piwin" target="_blank"><img class="link-effect" src="../assets/GitHub.png" alt=""></a>
-                <a href="https://www.linkedin.com/in/adrian-piwin/" target="_blank"><img class="link-effect" src="../assets/LinkedIn.png" alt=""></a>
-                <a href="mailto:adrianpiwin@gmail.com" target="_blank"><img class="link-effect" src="../assets/Email.png" alt=""></a>
-            </div>
+      <div class="hero-visual reveal" aria-hidden="true">
+        <div class="orbit">
+          <div class="orbit-ring orbit-ring--1"></div>
+          <div class="orbit-ring orbit-ring--2"></div>
+          <div class="avatar-card">
+            <img src="assets/img/avatar.png" alt="" class="pixel">
+          </div>
+          <span class="chip chip--1">TypeScript</span>
+          <span class="chip chip--2">React Native</span>
+          <span class="chip chip--3">Next.js</span>
+          <span class="chip chip--4">Flutter</span>
+          <span class="chip chip--5">Unity</span>
         </div>
+      </div>
+
+      <dl class="stats reveal-group">
+        <div class="stat reveal"><dt><span data-count="4">4</span>+</dt><dd>years as a software engineer</dd></div>
+        <div class="stat reveal"><dt><span data-count="3">3</span></dt><dd>products I've built and run end to end</dd></div>
+        <div class="stat reveal"><dt>2<sup>nd</sup></dt><dd>place finish in a week-long game jam</dd></div>
+      </dl>
+    </section>
+
+    <!-- Tech marquee -->
+    <div class="marquee" aria-label="Technologies I work with">
+      <div class="marquee-track">
+        <span>TypeScript</span><span>React Native</span><span>Expo</span><span>Next.js</span><span>React</span><span>Flutter</span><span>Supabase</span><span>PostgreSQL</span><span>Docker</span><span>Firebase</span><span>Unity</span><span>C#</span>
+        <span aria-hidden="true">TypeScript</span><span aria-hidden="true">React Native</span><span aria-hidden="true">Expo</span><span aria-hidden="true">Next.js</span><span aria-hidden="true">React</span><span aria-hidden="true">Flutter</span><span aria-hidden="true">Supabase</span><span aria-hidden="true">PostgreSQL</span><span aria-hidden="true">Docker</span><span aria-hidden="true">Firebase</span><span aria-hidden="true">Unity</span><span aria-hidden="true">C#</span>
+      </div>
     </div>
 
-    <!-- Project Page -->
-    <div id="projects" class="page">
+    <!-- Work -->
+    <section id="work" class="section container">
+      <div class="section-head">
+        <p class="eyebrow reveal"><span class="mono">01</span> Selected work</p>
+        <h2 class="section-title reveal">Products I'm building now</h2>
+      </div>
 
-        <div class="page-title">&ltprojects&gt</div>
-
-        <div id="project-list">
-
-            <div class="project-item">
-                <div class="project-detail-wrap">
-                    <!-- Project Title & Description -->
-                    <div class="project-item-title">FitXP (In Progress)</div>
-                    <div class="project-item-description">A mobile app developed with Flutter and Firebase. Provides trends and insights on your health data. Repersents your progress towards your goals in a gamified way - awarding a rank and medals based on the healthy habits the user develops.</div>
-                    <!-- Project Links -->
-                    <span class="project-links">
-                        <a href="https://github.com/Adrian-Piwin/FitXP" target="_blank" class="box-btn remove-link">View Code</a>
-                    </span>
-                </div>
-                <div class="project-img-multi">
-                    <img class="project-img" src="assets/fitxp_6.jpg" alt="">
-                    <img class="project-img" src="assets/fitxp_5.jpg" alt="">
-                </div>
-            </div>
-
-            <div class="project-item">
-                <div class="project-detail-wrap">
-                    <!-- Project Title & Description -->
-                    <div class="project-item-title">Kayletter</div>
-                    <div class="project-item-description">A website developed with ReactJS, HTML, CSS, and Firebase. Deployed onto an ubuntu server. A web application with a mobile focus. Users can create their own customized page with daily notes to send to their significant other. </div>
-                    <!-- Project Links -->
-                    <span class="project-links">
-                        <a href="https://kayletter.devaydren.com/" target="_blank" class="box-btn remove-link">View Project</a>
-                        <a href="https://github.com/Adrian-Piwin/Kayletter-App" target="_blank" class="box-btn remove-link">View Code</a>
-                    </span>
-                </div>
-                
-                <img class="project-img" src="assets/kayletter.png" alt="">
-            </div>
-
-            <div class="project-item">
-                <div class="project-detail-wrap">
-                    <!-- Project Title & Description -->
-                    <div class="project-item-title">Overboard</div>
-                    <div class="project-item-description">A 3D endless runner created with Unity and C# in collaboration with a 3D artist. Created for a game jam competition, where it was completed within 1 week.</div>
-                    <!-- Project Links -->
-                    <span class="project-links">
-                        <a href="https://devaydren.itch.io/overboard" target="_blank" class="box-btn remove-link">View Project</a>
-                        <a href="https://github.com/Adrian-Piwin/Overboard" target="_blank" class="box-btn remove-link">View Code</a>
-                    </span>
-                </div>
-                
-                <img class="project-img" src="assets/overboard.png" alt="">
-            </div>
-
-            <div class="project-item">
-                <div class="project-detail-wrap">
-                    <!-- Project Title & Description -->
-                    <div class="project-item-title">Abyssal</div>
-                    <div class="project-item-description">A 2D endless wave survival game created with Unity and C# in collaboration with a 2D artist. The game was developed in 1 week for a game jam competition, where it recieved 2nd place. </div>
-                    <!-- Project Links -->
-                    <span class="project-links">
-                        <a href="https://devaydren.itch.io/abyssal" target="_blank" class="box-btn remove-link">View Project</a>
-                        <a href="https://github.com/Adrian-Piwin/AttrReplGameJam" target="_blank" class="box-btn remove-link">View Code</a>
-                    </span>
-                </div>
-                
-                <img class="project-img" src="assets/abyssal.png" alt="">
-            </div>
-
-            <div class="project-item">
-                <div class="project-detail-wrap">
-                    <!-- Project Title & Description -->
-                    <div class="project-item-title">Shape Shifted</div>
-                    <div class="project-item-description">A 2D endless runner created with Unity and C#. The game was developed in 3 days for a game jam competition, where it recieved 5th place. The game also includes a coin/shop system for character customization.</div>
-                    <!-- Project Links -->
-                    <span class="project-links">
-                        <a href="https://devaydren.itch.io/shape-shifted" target="_blank" class="box-btn remove-link">View Project</a>
-                        <a href="https://github.com/Adrian-Piwin/ShapeShifted" target="_blank" class="box-btn remove-link">View Code</a>
-                    </span>
-                </div>
-                
-                <img class="project-img" src="assets/shapeshifted.png" alt="">
-            </div>
-
-            <div class="project-item">
-                <div class="project-detail-wrap">
-                    <!-- Project Title & Description -->
-                    <div class="project-item-title">Minesweeper Clone</div>
-                    <div class="project-item-description">Created a clone of Minesweeper using C#, XAML, and UWP in collaboration with another developer for a final term project. </div>
-                    <!-- Project Links -->
-                    <span class="project-links">
-                        <a href="https://github.com/Adrian-Piwin/Minesweeper-Clone/" target="_blank" class="box-btn remove-link">View Project</a>
-                        <a href="https://github.com/Adrian-Piwin/Minesweeper-Clone/" target="_blank" class="box-btn remove-link">View Code</a>
-                    </span>
-                </div>
-                
-                <img class="project-img" src="assets/MineSweeper.png" alt="">
-            </div>
-
-            <div class="project-item">
-                <div class="project-detail-wrap">
-                    <!-- Project Title & Description -->
-                    <div class="project-item-title">Tappy Tile</div>
-                    <div class="project-item-description">I created Tappy Tile in 1 week using Unity, to then be released on the google play store. Tappy tile is a hyper-casual mobile game where the player taps the tiles that appear in order accurately, aiming for a highscore on the global leaderboards.</div>
-                    <!-- Project Links -->
-                    <span class="project-links">
-                        <a href="https://play.google.com/store/apps/details?id=com.PingwinGames.TappyTile" target="_blank" class="box-btn remove-link">View Project</a>
-                        <a href="https://github.com/Adrian-Piwin/Tappy-Tile-Game" target="_blank" class="box-btn remove-link">View Code</a>
-                    </span>
-                </div>
-                
-                <img class="project-img" src="assets/tappytile.png" alt="">
-            </div>
-
+      <!-- Nutoro -->
+      <article class="feature reveal" style="--brand:#d07070; --brand-2:#9178c0; --brand-3:#c9a843;">
+        <div class="feature-copy">
+          <div class="feature-meta">
+            <img src="assets/img/nutoro-icon.webp" alt="" class="feature-icon" width="40" height="40">
+            <span class="tag">Mobile app · iOS</span>
+          </div>
+          <h3 class="feature-title">Nutoro</h3>
+          <p class="feature-tagline">Food logging that stays out of your way.</p>
+          <p class="feature-desc">A clean, fast calorie and macro tracker. Build a meal on a “plate”, see its totals, then log it in one tap onto a daily timeline. Search, barcode and nutrition-label scanning, recipes, and optional AI that logs a meal from a photo or a quick description.</p>
+          <ul class="stack"><li>React Native</li><li>TypeScript</li><li>Expo</li><li>Self-hosted Supabase</li></ul>
+          <div class="feature-links">
+            <a href="https://nutoroapp.com" target="_blank" rel="noopener" class="btn btn--primary">Visit nutoroapp.com <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
-        
-        <div class="page-title" style="margin-top: auto;">&lt/projects&gt</div>
-    </div>
-
-    <!-- About Page -->
-    <div id="about" class="page">
-        <div class="page-title">&ltabout&gt</div>
-
-        <div id="about-wrap">
-            <div id="about-detail-wrap">
-                <div id="about-title">About Me</div>
-                <div class="about-txt">I’ve been hooked on tech since I was a kid, and when I found programming, it felt like I’d finally found my calling. That initial spark has only grown stronger over the years, and it eventually led me to get my degree in computer science.</div>
-                <div class="about-txt">I’m all about puzzles and problem-solving. I love jumping into the unknown, driven by curiosity and the desire to learn.</div>
-                <div class="about-txt">Gaming and fitness are two of my biggest passions, which is why I take part in game jams and also create mobile apps related to fitness. It’s a great way for me to blend creativity with my interests and build something useful.</div>
-                <br/>
-                <div id="about-title">Let's Talk!</div>
-                <div class="about-txt">I'd like to hear from you, contact me at <span style="color: #FB9101;">adrianpiwin@gmail.com</span></div>
-            </div>
-    
-            <div id="about-img-container">
-                <img id="about-img" src="../assets/me2.png" alt="">
-            </div>
-
+        <div class="feature-visual feature-visual--phones">
+          <div class="phones" data-parallax>
+            <figure class="phone phone--l"><img src="assets/img/nutoro-plate-drawer.webp" alt="Nutoro plate summary with meal totals" loading="lazy"></figure>
+            <figure class="phone phone--c"><img src="assets/img/nutoro-hero-food-log.webp" alt="Nutoro food log timeline with daily macros" loading="lazy"></figure>
+            <figure class="phone phone--r"><img src="assets/img/nutoro-dashboard.webp" alt="Nutoro dashboard with calories and body stats" loading="lazy"></figure>
+          </div>
         </div>
+      </article>
 
-        <div class="page-title" style="margin-top: auto;">&lt/about&gt</div>
-    </div>
+      <!-- HealthCore -->
+      <article class="feature feature--flip reveal" style="--brand:#ff7a1a; --brand-2:#2f9bff; --brand-3:#f5d90a;">
+        <div class="feature-copy">
+          <div class="feature-meta">
+            <span class="feature-icon feature-icon--hc" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.4-9.3C1.4 8.6 3.3 5 6.8 5c2 0 3.4 1.1 4.2 2.4h2C13.8 6.1 15.2 5 17.2 5c3.5 0 5.4 3.6 4.2 6.7C19.5 16.4 12 21 12 21Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M5 12h3.5l1.5-3 3 6 1.5-3H19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span class="tag">Mobile app · App Store</span>
+          </div>
+          <h3 class="feature-title">HealthCore</h3>
+          <p class="feature-tagline">Your Apple Health data, finally readable.</p>
+          <p class="feature-desc">A dashboard for Apple Health that turns raw data into trends and insights: net calories, sleep stages, protein, steps and weight, by day, week, month or year. Streaks and medals reward the habits you build, and all of your data stays on your device.</p>
+          <ul class="stack"><li>Flutter</li><li>Dart</li><li>HealthKit</li></ul>
+          <div class="feature-links">
+            <a href="https://apps.apple.com/us/search?term=HealthCore" target="_blank" rel="noopener" class="btn btn--primary"><svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7a4.6 4.6 0 0 0-3.6-2c-1.5-.2-3 .9-3.8.9-.8 0-2-.9-3.3-.8a4.9 4.9 0 0 0-4.1 2.5c-1.8 3.1-.5 7.6 1.3 10.1.8 1.2 1.8 2.6 3.1 2.5 1.3-.1 1.7-.8 3.3-.8 1.5 0 2 .8 3.3.8 1.4 0 2.2-1.2 3-2.4a10 10 0 0 0 1.4-2.8 4.3 4.3 0 0 1-2.7-4.3ZM14 5.4A4.4 4.4 0 0 0 15 2.2a4.5 4.5 0 0 0-2.9 1.5 4.2 4.2 0 0 0-1 3.1 3.7 3.7 0 0 0 2.9-1.4Z"/></svg>View on the App Store</a>
+          </div>
+        </div>
+        <div class="feature-visual feature-visual--phones">
+          <div class="phones" data-parallax>
+            <figure class="phone phone--l"><img src="assets/img/healthcore-insights.webp" alt="HealthCore weekly insights with streaks and medals" loading="lazy"></figure>
+            <figure class="phone phone--c"><img src="assets/img/healthcore-home.webp" alt="HealthCore home dashboard" loading="lazy"></figure>
+            <figure class="phone phone--r"><img src="assets/img/healthcore-sleep.webp" alt="HealthCore sleep stages view" loading="lazy"></figure>
+          </div>
+        </div>
+      </article>
 
+      <!-- SetupSignal -->
+      <article class="feature reveal" style="--brand:#46c295; --brand-2:#2c8a68; --brand-3:#e07a76;">
+        <div class="feature-copy">
+          <div class="feature-meta">
+            <span class="feature-icon feature-icon--ss" aria-hidden="true"><svg viewBox="0 0 72 72" fill="none" stroke="currentColor" stroke-linecap="round"><circle cx="36" cy="36" r="32" stroke-width="4.5"/><line x1="15" y1="36" x2="28" y2="36" stroke-width="4.5"/><line x1="42" y1="36" x2="48" y2="36" stroke-width="4.5"/><line x1="36" y1="23" x2="36" y2="49" stroke-width="4.5"/><circle cx="36" cy="36" r="6" fill="currentColor" stroke="none"/><path d="M46 26c5.5 5.5 5.5 14.5 0 20" stroke-width="4"/><path d="M52 20c8.5 10 8.5 22 0 32" stroke-width="4"/></svg></span>
+            <span class="tag">Web platform · AI</span>
+          </div>
+          <h3 class="feature-title">SetupSignal</h3>
+          <p class="feature-tagline">Watch an AI trader work a real market, in the open.</p>
+          <p class="feature-desc">An AI paper-trading platform. A self-improving AI day trader works BTC and MNQ on a simulated account and publishes every trade idea, its reasoning, a journal and performance analytics, with Discord alerts when it plans a trade. Built as a study tool, not financial advice.</p>
+          <ul class="stack"><li>Next.js</li><li>TypeScript</li><li>PostgreSQL + pgvector</li><li>Docker</li></ul>
+          <div class="feature-links">
+            <a href="https://setupsignal.com" target="_blank" rel="noopener" class="btn btn--primary">Visit setupsignal.com <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="feature-visual feature-visual--chart">
+          <div class="terminal" data-parallax>
+            <div class="terminal-bar">
+              <span class="terminal-dots"><i></i><i></i><i></i></span>
+              <span class="terminal-title">MNQ · 5m · <em>simulated</em></span>
+              <span class="live"><i></i>Live</span>
+            </div>
+            <svg class="chart" viewBox="0 0 400 220" preserveAspectRatio="none" role="img" aria-label="Illustrative candlestick chart"></svg>
+            <div class="terminal-foot">
+              <span class="idea">Trade idea · Long retest</span>
+              <span class="rr">+1.8R</span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Earlier work -->
+    <section class="section container section--tight">
+      <div class="section-head section-head--row">
+        <div>
+          <p class="eyebrow reveal"><span class="mono">02</span> Earlier work</p>
+          <h2 class="section-title reveal">Games, web apps and experiments</h2>
+        </div>
+        <a href="https://github.com/Adrian-Piwin" target="_blank" rel="noopener" class="link-arrow reveal">More on GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+
+      <div class="grid reveal-group">
+        <article class="card reveal">
+          <div class="card-media"><img src="assets/img/kayletter.webp" alt="Kayletter web app" loading="lazy"></div>
+          <div class="card-body">
+            <div class="card-top"><h3>Kayletter</h3><span class="card-kind">Web app</span></div>
+            <p>A mobile-first web app for writing daily notes to your significant other on a personal, customizable page.</p>
+            <p class="card-stack">React · Firebase · Ubuntu</p>
+            <div class="card-links">
+              <a href="https://kayletter.devaydren.com/" target="_blank" rel="noopener">Live ↗</a>
+              <a href="https://github.com/Adrian-Piwin/Kayletter-App" target="_blank" rel="noopener">Code ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-media"><img src="assets/img/abyssal.webp" alt="Abyssal game" loading="lazy"></div>
+          <div class="card-body">
+            <div class="card-top"><h3>Abyssal</h3><span class="card-kind card-kind--award">2nd place</span></div>
+            <p>A 2D endless wave-survival game built in one week for a game jam, in collaboration with a 2D artist.</p>
+            <p class="card-stack">Unity · C#</p>
+            <div class="card-links">
+              <a href="https://devaydren.itch.io/abyssal" target="_blank" rel="noopener">Play ↗</a>
+              <a href="https://github.com/Adrian-Piwin/AttrReplGameJam" target="_blank" rel="noopener">Code ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-media"><img src="assets/img/shapeshifted.webp" alt="Shape Shifted game" loading="lazy"></div>
+          <div class="card-body">
+            <div class="card-top"><h3>Shape Shifted</h3><span class="card-kind card-kind--award">5th place</span></div>
+            <p>A 2D endless runner made in three days for a game jam, with a coin shop for character customization.</p>
+            <p class="card-stack">Unity · C#</p>
+            <div class="card-links">
+              <a href="https://devaydren.itch.io/shape-shifted" target="_blank" rel="noopener">Play ↗</a>
+              <a href="https://github.com/Adrian-Piwin/ShapeShifted" target="_blank" rel="noopener">Code ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-media"><img src="assets/img/overboard.webp" alt="Overboard game" loading="lazy"></div>
+          <div class="card-body">
+            <div class="card-top"><h3>Overboard</h3><span class="card-kind">Game jam</span></div>
+            <p>A 3D endless runner completed in one week for a game jam, built alongside a 3D artist.</p>
+            <p class="card-stack">Unity · C#</p>
+            <div class="card-links">
+              <a href="https://devaydren.itch.io/overboard" target="_blank" rel="noopener">Play ↗</a>
+              <a href="https://github.com/Adrian-Piwin/Overboard" target="_blank" rel="noopener">Code ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-media"><img src="assets/img/tappytile.webp" alt="Tappy Tile mobile game" loading="lazy"></div>
+          <div class="card-body">
+            <div class="card-top"><h3>Tappy Tile</h3><span class="card-kind">Google Play</span></div>
+            <p>A hyper-casual reflex game built in a week and released on Google Play, with global leaderboards.</p>
+            <p class="card-stack">Unity · C#</p>
+            <div class="card-links">
+              <a href="https://play.google.com/store/apps/details?id=com.PingwinGames.TappyTile" target="_blank" rel="noopener">Store ↗</a>
+              <a href="https://github.com/Adrian-Piwin/Tappy-Tile-Game" target="_blank" rel="noopener">Code ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-media"><img src="assets/img/minesweeper.webp" alt="Minesweeper clone" loading="lazy"></div>
+          <div class="card-body">
+            <div class="card-top"><h3>Minesweeper</h3><span class="card-kind">Desktop</span></div>
+            <p>A faithful Minesweeper clone for Windows, built with another developer as a final term project.</p>
+            <p class="card-stack">C# · XAML · UWP</p>
+            <div class="card-links">
+              <a href="https://github.com/Adrian-Piwin/Minesweeper-Clone/" target="_blank" rel="noopener">Code ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section container">
+      <div class="about">
+        <div class="about-visual reveal">
+          <div class="about-card">
+            <div class="about-card-glow"></div>
+            <img src="assets/img/avatar.png" alt="Pixel-art portrait of Adrian" class="pixel">
+            <div class="about-card-label">
+              <span class="mono">adrian.piwin</span>
+              <span class="status"><i></i>Currently building Nutoro</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-copy">
+          <p class="eyebrow reveal"><span class="mono">03</span> About</p>
+          <h2 class="section-title reveal">Four years in, still hooked.</h2>
+          <p class="reveal">I've been a software engineer for over four years, and I've been hooked on tech since I was a kid. Finding programming felt like finding my calling, and that spark carried me through a degree in computer science and into building software full time.</p>
+          <p class="reveal">I love puzzles and the unknown. Most of what I build starts with a problem in my own life: fitness and gaming are my two biggest passions, which is why my side projects tend to be health apps and game-jam entries. Lately I've been running my own products on infrastructure I set up and maintain myself.</p>
+          <div class="skills reveal-group">
+            <div class="skill reveal"><h4>Mobile</h4><p>React Native, Expo, Flutter, HealthKit</p></div>
+            <div class="skill reveal"><h4>Web</h4><p>Next.js, React, TypeScript</p></div>
+            <div class="skill reveal"><h4>Backend</h4><p>Supabase, PostgreSQL, Firebase, Docker</p></div>
+            <div class="skill reveal"><h4>Games</h4><p>Unity, C#</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section container">
+      <div class="contact reveal">
+        <p class="eyebrow"><span class="mono">04</span> Contact</p>
+        <h2 class="contact-title">Let's build something.</h2>
+        <p class="contact-lede">Have a project, a role or just a question? My inbox is open.</p>
+        <div class="contact-actions">
+          <a href="mailto:adrianpiwin@gmail.com" class="btn btn--primary btn--lg">adrianpiwin@gmail.com</a>
+          <button class="btn btn--ghost btn--lg copy" data-copy="adrianpiwin@gmail.com" type="button"><span class="copy-label">Copy email</span></button>
+        </div>
+        <div class="contact-links">
+          <a href="https://github.com/Adrian-Piwin" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/adrian-piwin/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="https://lavender-andy-36.tiiny.site/" target="_blank" rel="noopener">Resume ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <span>© <span id="year">2026</span> Adrian Piwin</span>
+    <a href="#top" class="to-top">Back to top ↑</a>
+  </footer>
 </body>
 </html>
